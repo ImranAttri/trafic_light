@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+#bord{
+    height: 350px;
+    width: 130px;
+    background-color: black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+.light{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 5px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, o, 0.5);
+}
+.red{
+    background-color:rgba(255, 0, 0, 0.3);
+    animation-name:redlight ;
+     animation-duration: 7s; 
+    animation-timing-function: step-start; 
+    animation-delay: 1s;
+    animation-iteration-count: calc(1);
+    animation-direction: normal;
+}
+.yellow{
+    background-color: rgba(255, 255, 0, 0.3);
+    animation-name: yellowlight;
+    animation-duration: 5s; 
+    animation-timing-function: step-start; 
+    animation-delay: 3s;
+    animation-iteration-count: calc(1);
+    animation-direction: normal;
+}
+.green{
+    background-color: rgba(0, 255, 0, 0.3);
+    animation-name: greenlight;
+     animation-duration: 7s; 
+    animation-timing-function: step-start; 
+    animation-delay: 8s;
+    animation-iteration-count: calc(1);
+    animation-direction: normal;
+}
+@keyframes redlight{
+from{background-color:rgba(255, 0, 0, 0.3) ;}
+to{background-color: rgba(255, 0, 0, 1);}
+}
+@keyframes yellowlight{
+from{background-color:rgba(255, 255, 0, 0.3) ;}
+to{background-color: rgba(255, 255, 0, 1);}
+}
+@keyframes greenlight{
+from{background-color:rgba(0, 255, 0, 0.3) ;}
+to{background-color: rgba(0, 255, 0, 1);}
+}
